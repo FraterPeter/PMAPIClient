@@ -49,6 +49,10 @@ class Response
 
     public function __construct($verb)
     {
+        if (!strlen($verb))
+        {
+            throw new InvalidValueException('verb', "$verb");
+        }
         $this->verb = $verb;
     }
 

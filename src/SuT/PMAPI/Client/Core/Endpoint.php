@@ -60,6 +60,11 @@ class Endpoint
             throw new InvalidValueException('endpoint', $endpoint);
         }
 
+        if (!strlen($server)) // TODO - ideally we need better/some validation here
+        {
+            throw new InvalidValueException('server', $endpoint);
+        }
+
         $this->Auth      = $Auth;
         $this->server    = rtrim($server, '/');
         $this->version   = (int) $version;

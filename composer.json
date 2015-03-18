@@ -1,8 +1,8 @@
 {
     "name": "sut/pmapi",
     "description": "PHP client library for Sign-Up.to's Permission Marketing API.",
-	"homepage": "https://github.com/FraterPeter/PMAPIClient",
-	"keywords":  ["PMAPI", "Sign-Up.to", "Permission marketing"], 
+    "homepage": "https://github.com/FraterPeter/PMAPIClient",
+    "keywords": ["PMAPI", "Sign-Up.to", "Permission marketing"],
     "authors": [
         {
             "name": "Peter Gordon-Brown",
