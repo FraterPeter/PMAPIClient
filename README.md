@@ -6,7 +6,7 @@ A PHP client library for [Sign-Up.to's Permission Marketing API (PMAPI)](https:/
 
 For full documentation on Sign-Up.to's Permission Marketing API please see their DEV site at: https://dev.sign-up.to/
 
-### Add a new subscriber and send an opt-in email 
+### Example 1: Add a new subscriber and send an opt-in email 
 
 The following example demonstrates use of the Subscriber helper class to create a new subscriber and send them an opt-in email.
 
@@ -33,7 +33,7 @@ $subscriber->save();
 $subscriber->->sendOptInEmail($listID);
 ```
 
-### Returning the latest list
+### Example 2: Returning the latest list
 
 The following example demonstrates working with the Request class to retrieve the latest list.
 
