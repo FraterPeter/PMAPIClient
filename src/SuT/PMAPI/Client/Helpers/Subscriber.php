@@ -247,12 +247,12 @@ class Subscriber
 
         foreach ($this->modifiedFields as $field => $oldvalue)
         {
-            if (isset($this->data[$field]))
+            if (array_key_exists($field, $this->data))
             {
                 $subscriberData[$field] = $this->$field;
             }
 
-            if (isset($this->subscriberProfileData[$field]))
+            if (array_key_exists($field, $this->subscriberProfileData))
             {
                 $subscriberProfileData[$field] = $this->$field;
             }
@@ -289,11 +289,23 @@ class Subscriber
         {
             foreach ($subscriberProfileData as $key => $value)
             {
-                $response = $this->request->subscriberProfileData->put(array(
-                    'subscriber_id'             => $this->id,
-                    'subscriberprofilefield_id' => $this->subscriberProfileFields[$key],
-                    'value'                     => $value
-                ));
+                if (is_null($value) || (!strlen($value)))
+                {
+                    // The value has a minlength, if the value is null/'' then
+                    // we should delete the record.
+                    $response = $this->request->subscriberProfileData->delete(array(
+                        'subscriber_id'             => $this->id,
+                        'subscriberprofilefield_id' => $this->subscriberProfileFields[$key]
+                    ));
+                }
+                else
+                {
+                    $response = $this->request->subscriberProfileData->put(array(
+                        'subscriber_id'             => $this->id,
+                        'subscriberprofilefield_id' => $this->subscriberProfileFields[$key],
+                        'value'                     => $value
+                    ));
+                }
 
                 if ($response->isError)
                 {
