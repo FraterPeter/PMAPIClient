@@ -13,7 +13,7 @@ A PHP client library for [Sign-Up.to's Permission Marketing API (PMAPI)](https:/
 
 ## Examples
 
-For full documentation on Sign-Up.to's Permission Marketing API please see their DEV site at: https://dev.sign-up.to/
+For full documentation on Sign-Up.to's Permission Marketing API please refer to the [dev site](https://dev.sign-up.to/)
 
 ### Example 1: Add a new subscriber and send an opt-in email 
 
