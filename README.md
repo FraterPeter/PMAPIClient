@@ -2,6 +2,15 @@
 
 A PHP client library for [Sign-Up.to's Permission Marketing API (PMAPI)](https://dev.sign-up.to/)
 
+## Composer installation
+
+```json
+"require": {
+    "sut/pmapi": "dev-master"
+}
+```
+
+
 ## Examples
 
 For full documentation on Sign-Up.to's Permission Marketing API please see their DEV site at: https://dev.sign-up.to/
