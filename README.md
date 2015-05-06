@@ -1,4 +1,6 @@
-![PMAPI logo](https://sapp.s3.amazonaws.com/github/sutpmapi.png)
+[![PMAPI logo](https://sapp.s3.amazonaws.com/github/sutpmapi.png)](https://dev.sign-up.to/)
+
+[![example](http://nexts.github.io/Clusterize.js/img/table_example.gif)](http://nexts.github.io/Clusterize.js/)
 
 # PMAPIClient
 
