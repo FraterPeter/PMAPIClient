@@ -47,7 +47,7 @@ class PartnerAuthHash extends Auth
 {
     protected $pid;
     protected $hash;
-    protected $cid;
+    protected $cid = null;
     protected $uid = null;
 
     const SUT_API_HASH_LEN = 40;
