@@ -1,6 +1,6 @@
 <?php
 /*
-	class PartnerAuthHash: represents a company ID / API hash authentication context.
+	class PartnerAuthHash: represents a Partner / API hash authentication context.
 
 	Part of the Sign-Up.to Permission Marketing API v0.1 Redistributable
 
