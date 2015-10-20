@@ -12,11 +12,14 @@
     "require": {
         "php": ">=5.3.0"
     },
-    "version": "0.0.2",
+    "version": "0.0.3",
     "autoload": {
         "psr-0": {
             "SuT": "src/"
         },
-        "files": ["src/SuT/PMAPI/Client/Core/Exceptions.php"]
+        "files": [
+			"src/SuT/PMAPI/Client/Core/Exceptions.php",
+			"src/SuT/PMAPI/Client/Endpoint/Exceptions.php"
+		]
     }
 }

@@ -49,7 +49,28 @@ abstract class Auth
         if (strpos('en_', $time_locale) !== 0)
         {
             // Try to select any English-language locale for date/times.
-            if (!setlocale(LC_TIME, array('en_US', 'en_US.utf8', 'en_GB', 'en_GB.utf8', 'en_CA', 'en_CA.utf8', 'en_AU', 'en_AU.utf8', 'en_NZ', 'en_NZ.utf8', 'eng', 'english-uk', 'uk', 'american', 'american english', 'american-english', 'english-american', 'english-us', 'english-usa', 'us')))
+            if (!setlocale(LC_TIME, array(
+                'en_US',
+                'en_US.utf8',
+                'en_GB',
+                'en_GB.utf8',
+                'en_CA',
+                'en_CA.utf8',
+                'en_AU',
+                'en_AU.utf8',
+                'en_NZ',
+                'en_NZ.utf8',
+                'eng',
+                'english-uk',
+                'uk',
+                'american',
+                'american english',
+                'american-english',
+                'english-american',
+                'english-us',
+                'english-usa',
+                'us'
+            )))
             {
                 throw new RuntimeEnvironmentException("Cannot set en_* locale for request");
             }
