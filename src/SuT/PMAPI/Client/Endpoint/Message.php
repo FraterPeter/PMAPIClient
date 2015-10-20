@@ -10,11 +10,11 @@ class Message extends AbstractSimpleEndpoint
 
     protected $_attributesGET = array(
         // Unique ID of the message.
-        'id'           => array(
+        'id' => array(
             'type' => 'int',
         ),
         // Whether the message is a custom opt-in message.
-        'customoptin'  => array(
+        'customoptin' => array(
             'type' => 'bool',
         ),
         // Whether the message is the default opt-in message.
@@ -22,27 +22,27 @@ class Message extends AbstractSimpleEndpoint
             'type' => 'bool',
         ),
         // Whether the message is editable.
-        'editable'     => array(
+        'editable' => array(
             'type' => 'bool',
         ),
         // Name of the message.
-        'name'         => array(
+        'name' => array(
             'type' => 'string',
         ),
         // Message type: "email" or "sms"
-        'type'         => array(
+        'type' => array(
             'type' => 'enum',
         ),
         // Whether a message has been used in a scheduled task.
-        'used'         => array(
+        'used' => array(
             'type' => 'bool',
         ),
         // Creation timestamp.
-        'cdate'        => array(
+        'cdate' => array(
             'type' => 'decimal ',
         ),
         // Last modification timestamp.
-        'mdate'        => array(
+        'mdate' => array(
             'type' => 'decimal ',
         ),
     );

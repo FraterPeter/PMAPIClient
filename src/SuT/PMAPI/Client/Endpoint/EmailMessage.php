@@ -7,59 +7,59 @@ class EmailMessage extends AbstractSimpleEndpoint
 
     protected $_attributesGET = array(
         // Unique ID of the message.
-        'id'             => array(
+        'id' => array(
             'type' => 'int',
         ),
         // Whether the message is a custom opt-in email. Defaults to false.
-        'customoptin'    => array(
+        'customoptin' => array(
             'type' => 'bool',
         ),
         // Whether the message is the default opt-in email.
-        'defaultoptin'   => array(
+        'defaultoptin' => array(
             'type' => 'bool',
         ),
         // Whether the message is editable.
-        'editable'       => array(
+        'editable' => array(
             'type' => 'bool',
         ),
         // The source editor. 1= "HTML input", 2="Classic Editor", 3="Campaign Designer", 4="Email Editor".
-        'editor'         => array(
+        'editor' => array(
             'type' => 'int',
         ),
         // The sender's email address. The value of the attribute must match a pre-configured value in your account on the Sign-Up.to platform. Default is 'null' if no pre-configured addresses exist.
-        'fromemail'      => array(
+        'fromemail' => array(
             'type' => 'string/null',
         ),
         // The sender's display name.
-        'fromname'       => array(
+        'fromname' => array(
             'type' => 'string',
         ),
         // Enable 'utm_' data for tracked links in Google Analytics . Default is 'false'.
-        'galinkdata'     => array(
+        'galinkdata' => array(
             'type' => 'bool',
         ),
         // HTML email content.
-        'html'           => array(
+        'html' => array(
             'type' => 'string',
         ),
         // Name of the message - this attribute is for reference only and isn't sent.
-        'name'           => array(
+        'name' => array(
             'type' => 'string',
         ),
         // The reply to email address.
-        'replyemail'     => array(
+        'replyemail' => array(
             'type' => 'string',
         ),
         // Whether the email footer features a 'send to a friend' link. Default is 'false'.
-        'friendlink'     => array(
+        'friendlink' => array(
             'type' => 'bool',
         ),
         // The subject of the email.
-        'subject'        => array(
+        'subject' => array(
             'type' => 'string',
         ),
         // Plain text content.
-        'text'           => array(
+        'text' => array(
             'type' => 'string',
         ),
         // Whether links are obfuscated for tracking in the plain text content. Write-only attribute - boolean, but always returned as 'null'. Default is 'false'.
@@ -67,62 +67,62 @@ class EmailMessage extends AbstractSimpleEndpoint
             'type' => 'bool/null',
         ),
         // Whether a message has been used in a scheduled task.
-        'used'           => array(
+        'used' => array(
             'type' => 'bool',
         ),
         // Creation timestamp.
-        'cdate'          => array(
+        'cdate' => array(
             'type' => 'decimal ',
         ),
         // Last modification timestamp.
-        'mdate'          => array(
+        'mdate' => array(
             'type' => 'decimal ',
         ),
     );
 
     protected $_attributesPOST = array(
         // Whether the message is a custom opt-in email. Defaults to false.
-        'customoptin'    => array(
+        'customoptin' => array(
             'type' => 'bool',
         ),
         // The source editor. 1= "HTML input", 2="Classic Editor", 3="Campaign Designer", 4="Email Editor".
-        'editor'         => array(
+        'editor' => array(
             'type' => 'int',
         ),
         // The sender's email address. The value of the attribute must match a pre-configured value in your account on the Sign-Up.to platform. Default is 'null' if no pre-configured addresses exist.
-        'fromemail'      => array(
+        'fromemail' => array(
             'type' => 'string/null',
         ),
         // The sender's display name.
-        'fromname'       => array(
+        'fromname' => array(
             'type' => 'string',
         ),
         // Enable 'utm_' data for tracked links in Google Analytics . Default is 'false'.
-        'galinkdata'     => array(
+        'galinkdata' => array(
             'type' => 'bool',
         ),
         // HTML email content.
-        'html'           => array(
+        'html' => array(
             'type' => 'string',
         ),
         // Name of the message - this attribute is for reference only and isn't sent.
-        'name'           => array(
+        'name' => array(
             'type' => 'string',
         ),
         // The reply to email address.
-        'replyemail'     => array(
+        'replyemail' => array(
             'type' => 'string',
         ),
         // Whether the email footer features a 'send to a friend' link. Default is 'false'.
-        'friendlink'     => array(
+        'friendlink' => array(
             'type' => 'bool',
         ),
         // The subject of the email.
-        'subject'        => array(
+        'subject' => array(
             'type' => 'string',
         ),
         // Plain text content.
-        'text'           => array(
+        'text' => array(
             'type' => 'string',
         ),
         // Whether links are obfuscated for tracking in the plain text content. Write-only attribute - boolean, but always returned as 'null'. Default is 'false'.
@@ -133,43 +133,43 @@ class EmailMessage extends AbstractSimpleEndpoint
 
     protected $_attributesPUT = array(
         // Whether the message is a custom opt-in email. Defaults to false.
-        'customoptin'    => array(
+        'customoptin' => array(
             'type' => 'bool',
         ),
         // The sender's email address. The value of the attribute must match a pre-configured value in your account on the Sign-Up.to platform. Default is 'null' if no pre-configured addresses exist.
-        'fromemail'      => array(
+        'fromemail' => array(
             'type' => 'string/null',
         ),
         // The sender's display name.
-        'fromname'       => array(
+        'fromname' => array(
             'type' => 'string',
         ),
         // Enable 'utm_' data for tracked links in Google Analytics . Default is 'false'.
-        'galinkdata'     => array(
+        'galinkdata' => array(
             'type' => 'bool',
         ),
         // HTML email content.
-        'html'           => array(
+        'html' => array(
             'type' => 'string',
         ),
         // Name of the message - this attribute is for reference only and isn't sent.
-        'name'           => array(
+        'name' => array(
             'type' => 'string',
         ),
         // The reply to email address.
-        'replyemail'     => array(
+        'replyemail' => array(
             'type' => 'string',
         ),
         // Whether the email footer features a 'send to a friend' link. Default is 'false'.
-        'friendlink'     => array(
+        'friendlink' => array(
             'type' => 'bool',
         ),
         // The subject of the email.
-        'subject'        => array(
+        'subject' => array(
             'type' => 'string',
         ),
         // Plain text content.
-        'text'           => array(
+        'text' => array(
             'type' => 'string',
         ),
         // Whether links are obfuscated for tracking in the plain text content. Write-only attribute - boolean, but always returned as 'null'. Default is 'false'.

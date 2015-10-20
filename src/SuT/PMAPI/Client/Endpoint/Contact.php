@@ -10,11 +10,11 @@ class Contact extends AbstractSimpleEndpoint
 
     protected $_attributesGET = array(
         // Unique ID of the task.
-        'task_id'       => array(
+        'task_id' => array(
             'type' => 'int',
         ),
         // Send channel: "email" or "sms".
-        'channel'       => array(
+        'channel' => array(
             'type' => 'enum',
         ),
         // Unique ID of the subscriber.
@@ -22,7 +22,7 @@ class Contact extends AbstractSimpleEndpoint
             'type' => 'int',
         ),
         // Contact timestamp.
-        'cdate'         => array(
+        'cdate' => array(
             'type' => 'decimal ',
         ),
     );

@@ -8,7 +8,7 @@ class EmailTransaction extends AbstractSimpleEndpoint
 
     protected $_attributesGET = array(
         // Unique ID of the resource.
-        'id'            => array(
+        'id' => array(
             'type' => 'int',
         ),
         // Recipient subscriber id.
@@ -16,43 +16,43 @@ class EmailTransaction extends AbstractSimpleEndpoint
             'type' => 'int/null ',
         ),
         // Recipient email address.
-        'email'         => array(
+        'email' => array(
             'type' => 'string/null',
         ),
         // Email subject.
-        'subject'       => array(
+        'subject' => array(
             'type' => 'string',
         ),
         // Email html body.
-        'bodyhtml'      => array(
+        'bodyhtml' => array(
             'type' => 'text/null',
         ),
         // Email text body.
-        'bodytext'      => array(
+        'bodytext' => array(
             'type' => 'text/null ',
         ),
         // Email from address subject (defaults to noreply@).
-        'fromemail'     => array(
+        'fromemail' => array(
             'type' => 'string/null ',
         ),
         // Email from name (defaults to company name).
-        'fromname'      => array(
+        'fromname' => array(
             'type' => 'string/null ',
         ),
         // Whether the opt-in email has been sent.
-        'completed'     => array(
+        'completed' => array(
             'type' => 'bool',
         ),
         // Whether the opt-in encountered an error.
-        'error'         => array(
+        'error' => array(
             'type' => 'bool',
         ),
         // An enum of an error, if one occured. Possible values: 'Failed', 'Blacklisted', 'Hard bounce', 'Soft bounce'.
-        'errortype'     => array(
+        'errortype' => array(
             'type' => 'enum/null ',
         ),
         // Creation timestamp.
-        'cdate'         => array(
+        'cdate' => array(
             'type' => 'decimal',
         ),
     );
@@ -63,27 +63,27 @@ class EmailTransaction extends AbstractSimpleEndpoint
             'type' => 'int/null ',
         ),
         // Recipient email address.
-        'email'         => array(
+        'email' => array(
             'type' => 'string/null',
         ),
         // Email subject.
-        'subject'       => array(
+        'subject' => array(
             'type' => 'string',
         ),
         // Email html body.
-        'bodyhtml'      => array(
+        'bodyhtml' => array(
             'type' => 'text/null',
         ),
         // Email text body.
-        'bodytext'      => array(
+        'bodytext' => array(
             'type' => 'text/null ',
         ),
         // Email from address subject (defaults to noreply@).
-        'fromemail'     => array(
+        'fromemail' => array(
             'type' => 'string/null ',
         ),
         // Email from name (defaults to company name).
-        'fromname'      => array(
+        'fromname' => array(
             'type' => 'string/null ',
         ),
     );

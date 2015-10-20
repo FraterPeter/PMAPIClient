@@ -10,7 +10,7 @@ class Automation extends AbstractSimpleEndpoint
 
     protected $_attributesGET = array(
         // Unique ID of the Marketing Automation rule.
-        'id'        => array(
+        'id' => array(
             'type' => 'int',
         ),
         // Type of event that triggers this rule: "subscription", "click", "date", "open".
@@ -18,27 +18,27 @@ class Automation extends AbstractSimpleEndpoint
             'type' => 'enum',
         ),
         // Rule name.
-        'name'      => array(
+        'name' => array(
             'type' => 'string',
         ),
         // Whether the rule is paused.
-        'paused'    => array(
+        'paused' => array(
             'type' => 'bool',
         ),
         // English-language description of the rule.
-        'summary'   => array(
+        'summary' => array(
             'type' => 'string/null',
         ),
         // Unique ID of the user who created this rule.
-        'user_id'   => array(
+        'user_id' => array(
             'type' => 'int',
         ),
         // Creation timestamp.
-        'cdate'     => array(
+        'cdate' => array(
             'type' => 'decimal ',
         ),
         // Last modification timestamp.
-        'mdate'     => array(
+        'mdate' => array(
             'type' => 'decimal ',
         ),
     );

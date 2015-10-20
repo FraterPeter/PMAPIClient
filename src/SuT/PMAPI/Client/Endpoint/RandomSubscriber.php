@@ -10,91 +10,91 @@ class RandomSubscriber extends AbstractSimpleEndpoint
 
     protected $_attributesGET = array(
         // Unique ID of the subscriber.
-        'id'                 => array(
+        'id' => array(
             'type' => 'int',
         ),
         // Whether this subscriber has ever had a bounced email.
-        'bounce_exists'      => array(
+        'bounce_exists' => array(
             'type' => 'bool',
         ),
         // Subscriber's company name.
-        'companyname'        => array(
+        'companyname' => array(
             'type' => 'string/null',
         ),
         // Whether the subscription to the list specified by list_id is confirmed.
-        'confirmed'          => array(
+        'confirmed' => array(
             'type' => 'bool/null',
         ),
         // Whether this subscriber has ever been contacted.
-        'contact_exists'     => array(
+        'contact_exists' => array(
             'type' => 'bool',
         ),
         // Subscriber's country in ISO-3316-1 format (two character), for example "GB".
-        'country'            => array(
+        'country' => array(
             'type' => 'string/null',
         ),
         // Subscriber's county.
-        'county'             => array(
+        'county' => array(
             'type' => 'string/null',
         ),
         // The day of the month of the subscriber's birthday (1-31).
-        'daybirth'           => array(
+        'daybirth' => array(
             'type' => 'int/null',
         ),
         // Subscriber email address.
-        'email'              => array(
+        'email' => array(
             'type' => 'string',
         ),
         // MD5 digest of the contents of the "email" attribute.
-        'emailmd5'           => array(
+        'emailmd5' => array(
             'type' => 'string',
         ),
         // Whether email delivery to the subscriber is currently suspended.
-        'emailsuspended'     => array(
+        'emailsuspended' => array(
             'type' => 'bool',
         ),
         // Subscriber's first/given name.
-        'firstname'          => array(
+        'firstname' => array(
             'type' => 'string/null',
         ),
         // Either "male" or "female".
-        'gender'             => array(
+        'gender' => array(
             'type' => 'enum/null',
         ),
         // Subscriber's house number.
-        'housenumber'        => array(
+        'housenumber' => array(
             'type' => 'string/null',
         ),
         // Subscriber's last/family name.
-        'lastname'           => array(
+        'lastname' => array(
             'type' => 'string/null',
         ),
         // IP address from which the subscriber most recently opened an email.
-        'latestopenip'       => array(
+        'latestopenip' => array(
             'type' => 'string/null',
         ),
         // List ID of the list that the subscriber is subscribed to.
-        'list_id'            => array(
+        'list_id' => array(
             'type' => 'int/null',
         ),
         // The month of the subscriber's birthday (1-12).
-        'monthbirth'         => array(
+        'monthbirth' => array(
             'type' => 'int/null',
         ),
         // Subscriber MSISDN (see definition). N.B. This attribute is treated as a string.
-        'msisdn'             => array(
+        'msisdn' => array(
             'type' => 'string',
         ),
         // Subscriber's postcode.
-        'postcode'           => array(
+        'postcode' => array(
             'type' => 'string/null',
         ),
         // Whether SMS delivery to the subscriber is currently suspended.
-        'smssuspended'       => array(
+        'smssuspended' => array(
             'type' => 'bool',
         ),
         // Subscriber's street name.
-        'streetname'         => array(
+        'streetname' => array(
             'type' => 'string/null',
         ),
         // Number of subscriptions held by this subscriber.
@@ -102,23 +102,23 @@ class RandomSubscriber extends AbstractSimpleEndpoint
             'type' => 'int/null',
         ),
         // Subscriber's title.
-        'title'              => array(
+        'title' => array(
             'type' => 'string/null',
         ),
         // Subscriber's town.
-        'town'               => array(
+        'town' => array(
             'type' => 'string/null',
         ),
         // The four-digit year of the subscriber's birth.
-        'yearbirth'          => array(
+        'yearbirth' => array(
             'type' => 'int/null',
         ),
         // Creation timestamp.
-        'cdate'              => array(
+        'cdate' => array(
             'type' => 'decimal',
         ),
         // Last modification timestamp.
-        'mdate'              => array(
+        'mdate' => array(
             'type' => 'decimal',
         ),
     );

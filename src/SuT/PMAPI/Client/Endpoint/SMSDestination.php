@@ -7,11 +7,11 @@ class SMSDestination extends AbstractSimpleEndpoint
 
     protected $_attributesGET = array(
         // Unique ID of the destination.
-        'id'          => array(
+        'id' => array(
             'type' => 'int',
         ),
         // SMS messages starting with this string will be accepted. Not case-sensitive; must not contain spaces; must be 4-64 characters in length.
-        'keyword'     => array(
+        'keyword' => array(
             'type' => 'string/null',
         ),
         // The MSISDN or shortcode to which SMS messages must be sent.
@@ -23,7 +23,7 @@ class SMSDestination extends AbstractSimpleEndpoint
             'type' => 'boolean',
         ),
         // Last modification timestamp.
-        'mdate'       => array(
+        'mdate' => array(
             'type' => 'decimal/null',
         ),
     );

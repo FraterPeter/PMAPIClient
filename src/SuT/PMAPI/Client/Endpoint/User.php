@@ -7,11 +7,11 @@ class User extends AbstractSimpleEndpoint
 
     protected $_attributesGET = array(
         // Unique ID of the user.
-        'id'          => array(
+        'id' => array(
             'type' => 'int',
         ),
         // Whether the user is active.
-        'active'      => array(
+        'active' => array(
             'type' => 'bool',
         ),
         // Whether the user is the current user making the request.
@@ -19,66 +19,66 @@ class User extends AbstractSimpleEndpoint
             'type' => 'bool',
         ),
         // The user's email address.
-        'email'       => array(
+        'email' => array(
             'type' => 'string',
         ),
         // The user's first name.
-        'firstname'   => array(
+        'firstname' => array(
             'type' => 'string',
         ),
         // Whether the user is the admin user.
-        'isadmin'     => array(
+        'isadmin' => array(
             'type' => 'bool',
         ),
         // Timestamp of when the user last logged into the online platform.
-        'lastlogon'   => array(
+        'lastlogon' => array(
             'type' => 'int/null',
         ),
         // Boolean (triggered by the user failing 3 login attempts in a row).
-        'locked'      => array(
+        'locked' => array(
             'type' => 'bool',
         ),
         // Total number of logins the user has made.
-        'logins'      => array(
+        'logins' => array(
             'type' => 'int',
         ),
         // Mobile number for the user.
-        'msisdn'      => array(
+        'msisdn' => array(
             'type' => 'string/null',
         ),
         // The user's password (at least seven characters with both letters and numbers).
-        'password'    => array(
+        'password' => array(
             'type' => 'string/null',
         ),
         // The user's last name (surname).
-        'lastname'    => array(
+        'lastname' => array(
             'type' => 'string',
         ),
         // The username for the user.
-        'username'    => array(
+        'username' => array(
             'type' => 'string',
         ),
         // The user's timezone.
-        'timezone'    => array(
+        'timezone' => array(
             'type' => 'string',
         ),
         // Creation timestamp.
-        'cdate'       => array(
+        'cdate' => array(
             'type' => 'decimal ',
         ),
         // Last modification timestamp.
-        'mdate'       => array(
+        'mdate' => array(
             'type' => 'decimal ',
         ),
     );
 
     protected $_attributesPOST = array(
         // Whether the user is active.
-        'active'    => array(
+        'active' => array(
             'type' => 'bool',
         ),
         // The user's email address.
-        'email'     => array(
+        'email' => array(
             'type' => 'string',
         ),
         // The user's first name.
@@ -86,30 +86,30 @@ class User extends AbstractSimpleEndpoint
             'type' => 'string',
         ),
         // Mobile number for the user.
-        'msisdn'    => array(
+        'msisdn' => array(
             'type' => 'string/null',
         ),
         // The user's password (at least seven characters with both letters and numbers).
-        'password'  => array(
+        'password' => array(
             'type' => 'string/null',
         ),
         // The user's last name (surname).
-        'lastname'  => array(
+        'lastname' => array(
             'type' => 'string',
         ),
         // The username for the user.
-        'username'  => array(
+        'username' => array(
             'type' => 'string',
         ),
     );
 
     protected $_attributesPUT = array(
         // Whether the user is active.
-        'active'    => array(
+        'active' => array(
             'type' => 'bool',
         ),
         // The user's email address.
-        'email'     => array(
+        'email' => array(
             'type' => 'string',
         ),
         // The user's first name.
@@ -117,19 +117,19 @@ class User extends AbstractSimpleEndpoint
             'type' => 'string',
         ),
         // Mobile number for the user.
-        'msisdn'    => array(
+        'msisdn' => array(
             'type' => 'string/null',
         ),
         // The user's password (at least seven characters with both letters and numbers).
-        'password'  => array(
+        'password' => array(
             'type' => 'string/null',
         ),
         // The user's last name (surname).
-        'lastname'  => array(
+        'lastname' => array(
             'type' => 'string',
         ),
         // The username for the user.
-        'username'  => array(
+        'username' => array(
             'type' => 'string',
         ),
     );

@@ -8,15 +8,15 @@ class Preview extends AbstractSimpleEndpoint
 
     protected $_attributesGET = array(
         // Unique ID of the preview.
-        'id'            => array(
+        'id' => array(
             'type' => 'int',
         ),
         // Unique ID of the message to send.
-        'message_id'    => array(
+        'message_id' => array(
             'type' => 'int',
         ),
         // Unique ID of the creator.
-        'user_id'       => array(
+        'user_id' => array(
             'type' => 'int',
         ),
         // Unique ID of a subscriber - used for personalisation only. If personalisation exists then the Sign-Up.to platform will populate the message with this subscriber's data. If null or omitted, no personalisation will be applied.
@@ -24,22 +24,22 @@ class Preview extends AbstractSimpleEndpoint
             'type' => 'int/null',
         ),
         // The preview recipient; email address or MSISDN (depending on the message_id's channel).
-        'recipient'     => array(
+        'recipient' => array(
             'type' => 'string',
         ),
         // Whether the preview has been sent.
-        'completed'     => array(
+        'completed' => array(
             'type' => 'bool',
         ),
         // Creation timestamp.
-        'cdate'         => array(
+        'cdate' => array(
             'type' => 'decimal ',
         ),
     );
 
     protected $_attributesPOST = array(
         // Unique ID of the message to send.
-        'message_id'    => array(
+        'message_id' => array(
             'type' => 'int',
         ),
         // Unique ID of a subscriber - used for personalisation only. If personalisation exists then the Sign-Up.to platform will populate the message with this subscriber's data. If null or omitted, no personalisation will be applied.
@@ -47,7 +47,7 @@ class Preview extends AbstractSimpleEndpoint
             'type' => 'int/null',
         ),
         // The preview recipient; email address or MSISDN (depending on the message_id's channel).
-        'recipient'     => array(
+        'recipient' => array(
             'type' => 'string',
         ),
     );

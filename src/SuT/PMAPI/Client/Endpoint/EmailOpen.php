@@ -10,7 +10,7 @@ class EmailOpen extends AbstractSimpleEndpoint
 
     protected $_attributesGET = array(
         // Unique ID of the open event.
-        'id'            => array(
+        'id' => array(
             'type' => 'string',
         ),
         // ID of the subscriber who clicked the link.
@@ -18,11 +18,11 @@ class EmailOpen extends AbstractSimpleEndpoint
             'type' => 'int',
         ),
         // ID of the task containing the link.
-        'task_id'       => array(
+        'task_id' => array(
             'type' => 'int',
         ),
         // Timestamp at which the subscriber opened the message.
-        'cdate'         => array(
+        'cdate' => array(
             'type' => 'decimal ',
         ),
     );

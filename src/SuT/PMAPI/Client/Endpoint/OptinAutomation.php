@@ -7,11 +7,11 @@ class OptinAutomation extends AbstractSimpleEndpoint
 
     protected $_attributesGET = array(
         // Unique ID of the Marketing Automation rule.
-        'id'         => array(
+        'id' => array(
             'type' => 'int',
         ),
         // Unique ID of the list used in the match comparison.
-        'list_id'    => array(
+        'list_id' => array(
             'type' => 'int/null',
         ),
         // Unique ID of the message used as the opt-in email.
@@ -19,34 +19,34 @@ class OptinAutomation extends AbstractSimpleEndpoint
             'type' => 'int',
         ),
         // Rule name.
-        'name'       => array(
+        'name' => array(
             'type' => 'string',
         ),
         // Whether the rule is paused.
-        'paused'     => array(
+        'paused' => array(
             'type' => 'bool',
         ),
         // English-language description of the rule.
-        'summary'    => array(
+        'summary' => array(
             'type' => 'string/null',
         ),
         // Unique ID of the user who created this rule.
-        'user_id'    => array(
+        'user_id' => array(
             'type' => 'int',
         ),
         // Creation timestamp.
-        'cdate'      => array(
+        'cdate' => array(
             'type' => 'decimal ',
         ),
         // Last modification timestamp.
-        'mdate'      => array(
+        'mdate' => array(
             'type' => 'decimal ',
         ),
     );
 
     protected $_attributesPOST = array(
         // Unique ID of the list used in the match comparison.
-        'list_id'    => array(
+        'list_id' => array(
             'type' => 'int/null',
         ),
         // Unique ID of the message used as the opt-in email.
@@ -54,15 +54,15 @@ class OptinAutomation extends AbstractSimpleEndpoint
             'type' => 'int',
         ),
         // Rule name.
-        'name'       => array(
+        'name' => array(
             'type' => 'string',
         ),
         // Whether the rule is paused.
-        'paused'     => array(
+        'paused' => array(
             'type' => 'bool',
         ),
         // English-language description of the rule.
-        'summary'    => array(
+        'summary' => array(
             'type' => 'string/null',
         ),
     );
@@ -73,15 +73,15 @@ class OptinAutomation extends AbstractSimpleEndpoint
             'type' => 'int',
         ),
         // Rule name.
-        'name'       => array(
+        'name' => array(
             'type' => 'string',
         ),
         // Whether the rule is paused.
-        'paused'     => array(
+        'paused' => array(
             'type' => 'bool',
         ),
         // English-language description of the rule.
-        'summary'    => array(
+        'summary' => array(
             'type' => 'string/null',
         ),
     );

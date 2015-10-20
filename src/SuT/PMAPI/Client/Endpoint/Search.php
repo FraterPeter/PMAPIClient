@@ -7,11 +7,11 @@ class Search extends AbstractSimpleEndpoint
 
     protected $_attributesGET = array(
         // Unique ID of the resource.
-        'id'          => array(
+        'id' => array(
             'type' => 'int',
         ),
         // XML representing a subscriber search query. (docs coming soon).
-        'expression'  => array(
+        'expression' => array(
             'type' => 'string',
         ),
         // A user-specified description of the search. Maximum length is 255 octets.
@@ -19,30 +19,30 @@ class Search extends AbstractSimpleEndpoint
             'type' => 'string/null',
         ),
         // The name of the search. Maximum length is 64 octets.
-        'name'        => array(
+        'name' => array(
             'type' => 'string',
         ),
         // The type of search: "audience" or "lookup". Defaults to "audience".
-        'type'        => array(
+        'type' => array(
             'type' => 'enum',
         ),
         // ID of the user who created the search.
-        'user_id'     => array(
+        'user_id' => array(
             'type' => 'int',
         ),
         // Creation timestamp.
-        'cdate'       => array(
+        'cdate' => array(
             'type' => 'decimal',
         ),
         // Last modification timestamp.
-        'mdate'       => array(
+        'mdate' => array(
             'type' => 'decimal',
         ),
     );
 
     protected $_attributesPOST = array(
         // XML representing a subscriber search query. (docs coming soon).
-        'expression'  => array(
+        'expression' => array(
             'type' => 'string',
         ),
         // A user-specified description of the search. Maximum length is 255 octets.
@@ -50,18 +50,18 @@ class Search extends AbstractSimpleEndpoint
             'type' => 'string/null',
         ),
         // The name of the search. Maximum length is 64 octets.
-        'name'        => array(
+        'name' => array(
             'type' => 'string',
         ),
         // The type of search: "audience" or "lookup". Defaults to "audience".
-        'type'        => array(
+        'type' => array(
             'type' => 'enum',
         ),
     );
 
     protected $_attributesPUT = array(
         // XML representing a subscriber search query. (docs coming soon).
-        'expression'  => array(
+        'expression' => array(
             'type' => 'string',
         ),
         // A user-specified description of the search. Maximum length is 255 octets.
@@ -69,7 +69,7 @@ class Search extends AbstractSimpleEndpoint
             'type' => 'string/null',
         ),
         // The name of the search. Maximum length is 64 octets.
-        'name'        => array(
+        'name' => array(
             'type' => 'string',
         ),
     );

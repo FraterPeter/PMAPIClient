@@ -10,7 +10,7 @@ class EmailLinkClick extends AbstractSimpleEndpoint
 
     protected $_attributesGET = array(
         // Unique ID of the link click event.
-        'id'                  => array(
+        'id' => array(
             'type' => 'string',
         ),
         // ID of the link in the message.
@@ -18,15 +18,15 @@ class EmailLinkClick extends AbstractSimpleEndpoint
             'type' => 'int',
         ),
         // ID of the subscriber who clicked the link.
-        'subscriber_id'       => array(
+        'subscriber_id' => array(
             'type' => 'int',
         ),
         // ID of the task containing the link.
-        'task_id'             => array(
+        'task_id' => array(
             'type' => 'int',
         ),
         // Timestamp at which the click occurred.
-        'cdate'               => array(
+        'cdate' => array(
             'type' => 'decimal ',
         ),
     );

@@ -7,15 +7,15 @@ class Folder extends AbstractSimpleEndpoint
 
     protected $_attributesGET = array(
         // Unique ID of the folder.
-        'id'                 => array(
+        'id' => array(
             'type' => 'int',
         ),
         // Number of lists contained in this folder.
-        'list_count'         => array(
+        'list_count' => array(
             'type' => 'int',
         ),
         // Folder name. Must be between 1 and 40 octets in length.
-        'name'               => array(
+        'name' => array(
             'type' => 'string',
         ),
         // Sum of the subscription counts of all lists contained in the folder.
@@ -23,11 +23,11 @@ class Folder extends AbstractSimpleEndpoint
             'type' => 'int',
         ),
         // Creation timestamp.
-        'cdate'              => array(
+        'cdate' => array(
             'type' => 'decimal ',
         ),
         // Last modification timestamp.
-        'mdate'              => array(
+        'mdate' => array(
             'type' => 'decimal ',
         ),
     );

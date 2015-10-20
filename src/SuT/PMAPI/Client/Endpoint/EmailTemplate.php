@@ -7,19 +7,19 @@ class EmailTemplate extends AbstractSimpleEndpoint
 
     protected $_attributesGET = array(
         // Unique ID of the email template.
-        'id'           => array(
+        'id' => array(
             'type' => 'int',
         ),
         // Template name. Maximum length is 128 octets.
-        'name'         => array(
+        'name' => array(
             'type' => 'string',
         ),
         // Description of the template. Maximum length is 255 octets.
-        'description'  => array(
+        'description' => array(
             'type' => 'string',
         ),
         // Template HTML content.
-        'content'      => array(
+        'content' => array(
             'type' => 'string',
         ),
         // The URL at which a thumbnail preview of the rendered template content can be found. NULL if the thumbnail image has not yet been generated.
@@ -27,18 +27,18 @@ class EmailTemplate extends AbstractSimpleEndpoint
             'type' => 'string/null',
         ),
         // Template creation timestamp.
-        'cdate'        => array(
+        'cdate' => array(
             'type' => 'decimal',
         ),
         // Last modification timestamp.
-        'mdate'        => array(
+        'mdate' => array(
             'type' => 'decimal',
         ),
     );
 
     protected $_attributesPOST = array(
         // Template name. Maximum length is 128 octets.
-        'name'        => array(
+        'name' => array(
             'type' => 'string',
         ),
         // Description of the template. Maximum length is 255 octets.
@@ -46,14 +46,14 @@ class EmailTemplate extends AbstractSimpleEndpoint
             'type' => 'string',
         ),
         // Template HTML content.
-        'content'     => array(
+        'content' => array(
             'type' => 'string',
         ),
     );
 
     protected $_attributesPUT = array(
         // Template name. Maximum length is 128 octets.
-        'name'        => array(
+        'name' => array(
             'type' => 'string',
         ),
         // Description of the template. Maximum length is 255 octets.
@@ -61,7 +61,7 @@ class EmailTemplate extends AbstractSimpleEndpoint
             'type' => 'string',
         ),
         // Template HTML content.
-        'content'     => array(
+        'content' => array(
             'type' => 'string',
         ),
     );

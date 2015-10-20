@@ -10,7 +10,7 @@ class EmailMessageLink extends AbstractSimpleEndpoint
 
     protected $_attributesGET = array(
         // Unique ID of the message link.
-        'id'         => array(
+        'id' => array(
             'type' => 'int',
         ),
         // ID of the message.
@@ -18,23 +18,23 @@ class EmailMessageLink extends AbstractSimpleEndpoint
             'type' => 'int ',
         ),
         // For personalised links, the name assigned to the link.
-        'name'       => array(
+        'name' => array(
             'type' => 'string/null ',
         ),
         // Link destination URL.
-        'target'     => array(
+        'target' => array(
             'type' => 'string',
         ),
         // Unique ID of the task.
-        'task_id'    => array(
+        'task_id' => array(
             'type' => 'int',
         ),
         // Message part containing the link - "html" / "text".
-        'type'       => array(
+        'type' => array(
             'type' => 'enum ',
         ),
         // Creation timestamp.
-        'cdate'      => array(
+        'cdate' => array(
             'type' => 'decimal',
         ),
     );

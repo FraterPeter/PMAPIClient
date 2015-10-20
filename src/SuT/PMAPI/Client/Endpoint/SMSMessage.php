@@ -7,7 +7,7 @@ class SMSMessage extends AbstractSimpleEndpoint
 
     protected $_attributesGET = array(
         // Unique ID of the message.
-        'id'       => array(
+        'id' => array(
             'type' => 'int',
         ),
         // Messages are editable until a 'task' has been scheduled.
@@ -19,27 +19,27 @@ class SMSMessage extends AbstractSimpleEndpoint
             'type' => 'string ',
         ),
         // SMS message content.
-        'message'  => array(
+        'message' => array(
             'type' => 'string',
         ),
         // Name of the message - this attribute is for reference only and isn't sent.
-        'name'     => array(
+        'name' => array(
             'type' => 'string',
         ),
         // Whether to include SMS unsubscription information in the message. Default is 'false'.
-        'subinfo'  => array(
+        'subinfo' => array(
             'type' => 'bool',
         ),
         // Whether a message has been used in a scheduled task.
-        'used'     => array(
+        'used' => array(
             'type' => 'bool',
         ),
         // Creation timestamp.
-        'cdate'    => array(
+        'cdate' => array(
             'type' => 'decimal ',
         ),
         // Last modification timestamp.
-        'mdate'    => array(
+        'mdate' => array(
             'type' => 'decimal ',
         ),
     );
@@ -50,15 +50,15 @@ class SMSMessage extends AbstractSimpleEndpoint
             'type' => 'string ',
         ),
         // SMS message content.
-        'message'  => array(
+        'message' => array(
             'type' => 'string',
         ),
         // Name of the message - this attribute is for reference only and isn't sent.
-        'name'     => array(
+        'name' => array(
             'type' => 'string',
         ),
         // Whether to include SMS unsubscription information in the message. Default is 'false'.
-        'subinfo'  => array(
+        'subinfo' => array(
             'type' => 'bool',
         ),
     );
@@ -69,15 +69,15 @@ class SMSMessage extends AbstractSimpleEndpoint
             'type' => 'string ',
         ),
         // SMS message content.
-        'message'  => array(
+        'message' => array(
             'type' => 'string',
         ),
         // Name of the message - this attribute is for reference only and isn't sent.
-        'name'     => array(
+        'name' => array(
             'type' => 'string',
         ),
         // Whether to include SMS unsubscription information in the message. Default is 'false'.
-        'subinfo'  => array(
+        'subinfo' => array(
             'type' => 'bool',
         ),
     );

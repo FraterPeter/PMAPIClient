@@ -8,7 +8,7 @@ class DoNotContact extends AbstractSimpleEndpoint
 
     protected $_attributesGET = array(
         // Unique ID of the resource.
-        'id'          => array(
+        'id' => array(
             'type' => 'int',
         ),
         // An email address, domain name or MSISDN (see definition).
@@ -16,7 +16,7 @@ class DoNotContact extends AbstractSimpleEndpoint
             'type' => 'string',
         ),
         // Creation timestamp.
-        'cdate'       => array(
+        'cdate' => array(
             'type' => 'decimal ',
         ),
     );

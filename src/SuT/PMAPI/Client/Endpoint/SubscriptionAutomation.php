@@ -7,7 +7,7 @@ class SubscriptionAutomation extends AbstractSimpleEndpoint
 
     protected $_attributesGET = array(
         // Unique ID of the Marketing Automation rule.
-        'id'              => array(
+        'id' => array(
             'type' => 'int',
         ),
         // Whether the rule will trigger at weekends.
@@ -15,47 +15,47 @@ class SubscriptionAutomation extends AbstractSimpleEndpoint
             'type' => 'bool',
         ),
         // Datum used by actiontype, e.g. list ID if actiontype is "movetolist".
-        'actiontarget'    => array(
+        'actiontarget' => array(
             'type' => 'string',
         ),
         // A specific hour for the action to occur, format "HH:00:00".
-        'actionhour'      => array(
+        'actionhour' => array(
             'type' => 'string/null',
         ),
         // Offset, in minutes, between a matching event and an consequent action.
-        'actiontimediff'  => array(
+        'actiontimediff' => array(
             'type' => 'int',
         ),
         // The kind of action to be taken upon a successful match: "copytolist", "email_autoresponder", "movetolist", "notify", "removefromlist", "sms_autoresponder".
-        'actiontype'      => array(
+        'actiontype' => array(
             'type' => 'enum',
         ),
         // Unique ID of the list used in the match comparison.
-        'list_id'         => array(
+        'list_id' => array(
             'type' => 'int',
         ),
         // Rule name.
-        'name'            => array(
+        'name' => array(
             'type' => 'string',
         ),
         // Whether the rule is paused.
-        'paused'          => array(
+        'paused' => array(
             'type' => 'bool',
         ),
         // English-language description of the rule.
-        'summary'         => array(
+        'summary' => array(
             'type' => 'string/null',
         ),
         // Unique ID of the user who created this rule.
-        'user_id'         => array(
+        'user_id' => array(
             'type' => 'int',
         ),
         // Creation timestamp.
-        'cdate'           => array(
+        'cdate' => array(
             'type' => 'decimal ',
         ),
         // Last modification timestamp.
-        'mdate'           => array(
+        'mdate' => array(
             'type' => 'decimal ',
         ),
     );
@@ -66,35 +66,35 @@ class SubscriptionAutomation extends AbstractSimpleEndpoint
             'type' => 'bool',
         ),
         // Datum used by actiontype, e.g. list ID if actiontype is "movetolist".
-        'actiontarget'    => array(
+        'actiontarget' => array(
             'type' => 'string',
         ),
         // A specific hour for the action to occur, format "HH:00:00".
-        'actionhour'      => array(
+        'actionhour' => array(
             'type' => 'string/null',
         ),
         // Offset, in minutes, between a matching event and an consequent action.
-        'actiontimediff'  => array(
+        'actiontimediff' => array(
             'type' => 'int',
         ),
         // The kind of action to be taken upon a successful match: "copytolist", "email_autoresponder", "movetolist", "notify", "removefromlist", "sms_autoresponder".
-        'actiontype'      => array(
+        'actiontype' => array(
             'type' => 'enum',
         ),
         // Unique ID of the list used in the match comparison.
-        'list_id'         => array(
+        'list_id' => array(
             'type' => 'int',
         ),
         // Rule name.
-        'name'            => array(
+        'name' => array(
             'type' => 'string',
         ),
         // Whether the rule is paused.
-        'paused'          => array(
+        'paused' => array(
             'type' => 'bool',
         ),
         // English-language description of the rule.
-        'summary'         => array(
+        'summary' => array(
             'type' => 'string/null',
         ),
     );
@@ -105,35 +105,35 @@ class SubscriptionAutomation extends AbstractSimpleEndpoint
             'type' => 'bool',
         ),
         // Datum used by actiontype, e.g. list ID if actiontype is "movetolist".
-        'actiontarget'    => array(
+        'actiontarget' => array(
             'type' => 'string',
         ),
         // A specific hour for the action to occur, format "HH:00:00".
-        'actionhour'      => array(
+        'actionhour' => array(
             'type' => 'string/null',
         ),
         // Offset, in minutes, between a matching event and an consequent action.
-        'actiontimediff'  => array(
+        'actiontimediff' => array(
             'type' => 'int',
         ),
         // The kind of action to be taken upon a successful match: "copytolist", "email_autoresponder", "movetolist", "notify", "removefromlist", "sms_autoresponder".
-        'actiontype'      => array(
+        'actiontype' => array(
             'type' => 'enum',
         ),
         // Unique ID of the list used in the match comparison.
-        'list_id'         => array(
+        'list_id' => array(
             'type' => 'int',
         ),
         // Rule name.
-        'name'            => array(
+        'name' => array(
             'type' => 'string',
         ),
         // Whether the rule is paused.
-        'paused'          => array(
+        'paused' => array(
             'type' => 'bool',
         ),
         // English-language description of the rule.
-        'summary'         => array(
+        'summary' => array(
             'type' => 'string/null',
         ),
     );

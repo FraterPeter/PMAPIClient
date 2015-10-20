@@ -10,15 +10,15 @@ class Form extends AbstractSimpleEndpoint
 
     protected $_attributesGET = array(
         // Unique ID of the form.
-        'id'            => array(
+        'id' => array(
             'type' => 'int',
         ),
         // Google Analytics tracking code.
-        'gacode'        => array(
+        'gacode' => array(
             'type' => 'string',
         ),
         // Form name.
-        'name'          => array(
+        'name' => array(
             'type' => 'string',
         ),
         // Does not send the subscriber an opt-in email if they have an existing subscription.
@@ -26,15 +26,15 @@ class Form extends AbstractSimpleEndpoint
             'type' => 'int',
         ),
         // Unique ID of the user who created this form.
-        'user_id'       => array(
+        'user_id' => array(
             'type' => 'int',
         ),
         // Creation timestamp.
-        'cdate'         => array(
+        'cdate' => array(
             'type' => 'decimal ',
         ),
         // Last modification timestamp.
-        'mdate'         => array(
+        'mdate' => array(
             'type' => 'decimal ',
         ),
     );

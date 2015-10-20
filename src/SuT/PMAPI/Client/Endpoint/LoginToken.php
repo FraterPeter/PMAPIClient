@@ -9,7 +9,7 @@ class LoginToken extends AbstractSimpleEndpoint
 
     protected $_attributesGET = array(
         // Unique ID of the resource.
-        'id'      => array(
+        'id' => array(
             'type' => 'int',
         ),
         // The service this token will be used by (currently only "sutclientapp", which is the Sign-Up.to client application).
@@ -17,7 +17,7 @@ class LoginToken extends AbstractSimpleEndpoint
             'type' => 'enum',
         ),
         // The generated login token.
-        'token'   => array(
+        'token' => array(
             'type' => 'string',
         ),
         // The user id of the user that created this login token.
@@ -25,7 +25,7 @@ class LoginToken extends AbstractSimpleEndpoint
             'type' => 'int',
         ),
         // Creation timestamp.
-        'cdate'   => array(
+        'cdate' => array(
             'type' => 'decimal',
         ),
     );
