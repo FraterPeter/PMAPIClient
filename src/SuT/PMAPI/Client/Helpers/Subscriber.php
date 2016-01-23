@@ -156,10 +156,11 @@ class Subscriber
      * sendOptInEmail
      *
      * @param int $listId
-     *
+     * @param int $confirmation_url
+     * 
      * @return int emailOptIn id
      */
-    public function sendOptInEmail($listId)
+    public function sendOptInEmail($listId, $confirmation_url=null)
     {
         if (!is_numeric($listId) || $listId < 1)
         {
@@ -174,6 +175,7 @@ class Subscriber
 
         $response = $this->request->emailOptIn->post(array(
             'subscription_id' => $this->getListSubscriptionId($listId),
+            'redirectionurl' => $confirmation_url
         ));
 
         if ($response->isError)
