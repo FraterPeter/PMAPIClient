@@ -36,7 +36,7 @@ $subscriber->email     = "example@example.com";
 $subscriber->confirmed = false;
 $subscriber->list_id   = $listID;
 $subscriber->save();
-$subscriber->->sendOptInEmail($listID);
+$subscriber->sendOptInEmail($listID);
 ```
 
 ### Example 2: Returning the latest list
