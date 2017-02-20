@@ -77,3 +77,49 @@ $createdDate      = date('r', $createdTimestamp);
 
 echo "List '$listName' has id '$listID' and was created on $createdDate\n";
 ```
+
+### Example 3: Token authentication
+
+The following example demonstrates token authentication.
+
+```php
+require_once __DIR__ . '/vendor/autoload.php';
+
+// Define your authentication details, if you don't have any then follow the instructions here: 
+// https://dev.sign-up.to/documentation/reference/latest/guides/get-started/
+define("USERNAME", "xxxxxxxxxxx"); // Your Sign-Up.to username
+define("PASSWORD", "xxxxxxxxxxx"); // Your Sign-Up.to password
+
+// Create a token
+$request = new SuT\PMAPI\Client\Core\Request(new SuT\PMAPI\Client\Core\AuthNone());
+$response = $request->token->post(array('username' => USERNAME,
+                                        'password' => PASSWORD));
+
+if ($response->isError)
+{
+    die ("ERROR: Authentication failed: {$response->error}\n");
+}
+
+// The authentication token
+$token = $response->data['token'];
+
+// The token expiry 
+$expiry = $response->data['expiry'];
+
+// You can then use this token to make requests
+$request = new SuT\PMAPI\Client\Core\Request(new SuT\PMAPI\Client\Core\AuthToken($token));
+
+// Get the most recently created list.
+$args = array(
+    'sort'    => 'cdate',
+    'reverse' => true,
+    'count'   => 1,
+);
+
+$response = $request->list->get($args);
+
+if ($response->isError)
+{
+    die("Failed to obtain a collection of lists: {$response->error}\n");
+}
+```
