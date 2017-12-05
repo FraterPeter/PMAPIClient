@@ -37,6 +37,8 @@ $subscriber->confirmed = false;
 $subscriber->list_id   = $listID;
 $subscriber->save();
 $subscriber->sendOptInEmail($listID);
+// Or you can pass a confirmation URL
+$subscriber->sendOptInEmail($listID, 'https://your-domain.com/thanks-for-signing-up');
 ```
 
 ### Example 2: Returning the latest list
