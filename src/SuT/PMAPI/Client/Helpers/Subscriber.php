@@ -173,10 +173,16 @@ class Subscriber
             throw new SubscriberEmailOptInException ("Subscriber is not subscribed to list '$listId', can not send email optin.");
         }
 
-        $response = $this->request->emailOptIn->post(array(
+        $options = array(
             'subscription_id' => $this->getListSubscriptionId($listId),
-            'redirectionurl' => $confirmationURL
-        ));
+        );
+
+        if(!is_null($confirmationURL))
+        {
+            $options['redirectionurl'] = $confirmationURL;
+        }
+
+        $response = $this->request->emailOptIn->post($options);
 
         if ($response->isError)
         {
